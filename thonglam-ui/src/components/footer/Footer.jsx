@@ -1,6 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import "./footer.css";
+import "./footer.module.css";
+import styled from "styled-components";
+import EazyButton from "../EazyButton";
+
+
+const H1 =styled.h1`
+color: #5b21b6;
+text-align: center;
+`;
+
 
 export default function Footer() {
 
@@ -9,7 +18,11 @@ export default function Footer() {
   return (
 
    <>
-     <h1 style={{textAlign: "center", color: isActive ? "#5B21B6": "#333"}}>Demo of Global CSS Scope from Footer</h1>
+{/* 
+  <H1>Demo of Styled Component from Footer</H1>
+  <EazyButton $primary >Submit</EazyButton> */}
+{/* 
+     <h1 style={{textAlign: "center", color: isActive ? "#5B21B6": "#333"}}>Demo of Global CSS Scope from Footer</h1> */}
     <footer className="footer">
       Buit with
       <FontAwesomeIcon
